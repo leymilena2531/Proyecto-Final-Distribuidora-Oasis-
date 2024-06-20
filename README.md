@@ -5,7 +5,7 @@ La Distribuidora Oasis enfrenta desafíos en la gestión de su inventario, lo cu
 
 <h2>El Desafio 🚀</h2>   
 
-El desafío principal de la empresa es implementar un sistema de gestión de inventario eficiente. La falta de control preciso sobre las existencias resulta en costos innecesarios, pérdida de ventas y dificultad para tomar decisiones estratégicas. Además, la inconsistencia entre el stock actual y el inventario registrado genera confusiones y errores en la gestión diaria.
+El desafío principal de la empresa es implementar un sistema de gestión de inventario eficiente. la falta de conocimiento sobre la gestión de inventarios representa un obstáculo significativo para su expansión, este desconocimiento radica en que la información se encuentra almacenada en diferentes archivos de Excel y no hay una unanimidad de los datos. Sin una comprensión detallada de sus existencias y de cómo gestionarlas eficientemente, la empresa podría experimentar problemas de logística, exceso o escasez de productos y, finalmente, perdida de ventas.
 
 <h2>Objetivos 🎯</h2> 
 
