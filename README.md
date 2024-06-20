@@ -1,4 +1,4 @@
-# Expansión Online de tiendas TopDrinks
+# 
 
 <h2>La empresa 🍻🍾🍺</h2>  
 La Distribuidora Oasis enfrenta desafíos en la gestión de su inventario, lo cual impacta directamente en sus costos y rentabilidad. Actualmente, se enfrenta a problemas como el exceso de stock, roturas de stock e ineficiencia en la cadena de suministro. Estas dificultades generan altos costos, pérdida de ventas y una mala experiencia del cliente.
