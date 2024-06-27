@@ -13,20 +13,26 @@
 ### **Escalabilidad:** 
 
 
+## GOOGLE CLOUD PLATFORM
+
+**Proyecto** `Soluciones Analíticas PF`
+**ID de proyecto:** `neural-ripple-426817-v0`
+**Conjunto de Datos:** `BD_OASIS` 
+PONER LAS APIS UTILIZADAS EN OTRO README, Y ADJUNTAR EL LINK ACA.
+Credenciales para poder acceder con las APIS???? 
+ver que mas falta aca. 
+
+
 # PIPELINE
 
-#### EXTRACCIÓN: 
+### EXTRACCIÓN: 
 
-Los archivos CSV almacenados en Google Drive se importaron a [Google Cloud Platform](https://cloud.google.com/?_gl=1*6gcnrv*_up*MQ..&gclid=CjwKCAjw-O6zBhASEiwAOHeGxXc4YZx6SNH1EHwvQgGmacSJnslZSK8XEbOaI-IYDAFV-nnJz4emIxoCwYcQAvD_BwE&gclsrc=aw.ds&hl=es_419), en Datawarehouse BigQuery, utilizando código de Python en [Google Colaboratory](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1) 
+Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de datos por el Área de Ánálisis de Datos(link), se importaron a [Google Cloud Platform](https://cloud.google.com/?_gl=1*6gcnrv*_up*MQ..&gclid=CjwKCAjw-O6zBhASEiwAOHeGxXc4YZx6SNH1EHwvQgGmacSJnslZSK8XEbOaI-IYDAFV-nnJz4emIxoCwYcQAvD_BwE&gclsrc=aw.ds&hl=es_419), en Datawarehouse BigQuery, utilizando código de Python en [Google Colab](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1) 
 
 (ajuntar pipepline hecho en draw.io) 
 
 
-## Estructura en GOOGLE CLOUD PLATFORM
-
-Para la carga de datos en BigQuery, se añadió un **proyecto** llamado: `Soluciones Analíticas PF`, **ID de proyecto:** `neural-ripple-426817-v0`. Se creó un **conjunto de datos:** `BD_OASIS` donde fueron añadidas las 9 tablas mediante código de Python desde Google Colab mencionado anteriormente.
-
-Credenciales para poder acceder con las APIS. 
+### TRANSFORMACIÓN:
 
 Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
 
