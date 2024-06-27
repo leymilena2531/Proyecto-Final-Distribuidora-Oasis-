@@ -52,11 +52,11 @@ Para la carga de datos en BigQuery, se añadió un **proyecto** llamado: Solucio
 
 Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
 
-```
+```Python
 #CREAR ESQUEMA DE TABLA DE MOVIMIENTO DE INVENTARIO
 
 CREATE TABLE `neural-ripple-426817-v0.BD_OASIS.MOVIMIENTO_DE_INVENTARIO` (
-    MovimientoID INT64,
+	MovimientoID INT64,
     InventarioID STRING,
     Detalle_compraID INT64,
     VentaID INT64,
