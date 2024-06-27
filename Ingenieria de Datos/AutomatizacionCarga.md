@@ -148,7 +148,7 @@ En nuestro caso, publicará el Pub/Sub creado inicial.
 Primero, definimos el programa.
 Le pondremos un nombre al programa, en nuestro caso será `Actualizar_compras`, elegimos la misma region que veniamos trabajando, le agregamos una breve descripción de lo que hará el programa, y programaremos la frecuencia.
 
-La frecuencia se especifica con el formato Cron, que funciona de la siguiente  forma
+La frecuencia se especifica con el formato Cron, que funciona de la siguiente forma:
 
 ```sql
 * * * * *
