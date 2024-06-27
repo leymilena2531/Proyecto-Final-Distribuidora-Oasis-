@@ -1,4 +1,4 @@
-Antes de iniciar cualquier proceso de automatización se deberá contar con el archivo .json con las credenciales del proyecto del que vamos a trabajar. En nuestro caso será ´neural-ripple-426817-v0-65c1b31ad608´
+Antes de iniciar cualquier proceso de automatización se deberá contar con el archivo .json con las credenciales del proyecto del que vamos a trabajar. En nuestro caso será `neural-ripple-426817-v0-65c1b31ad608`
 
 En primer lugar en Pub/Sub, se creó un tema por cada tarea que vamos a automatizar `CREAR TEMA`
 
@@ -6,28 +6,28 @@ En primer lugar en Pub/Sub, se creó un tema por cada tarea que vamos a automati
 
 Pub/Sub puede manejar grandes volúmenes de mensajes y escalar automáticamente según la demanda.
 
-Lo primero que haremos dentro de este coso es ´CREAR TEMA´.
+Lo primero que haremos dentro de este coso es `CREAR TEMA`.
 
 Un tema es un canal de comunicación al que los editores envían mensajes. Los temas son puntos de acceso a los que los mensajes son enviados.
 
 Elegimos un ID del tema por cada accion a realizar.
 
-En este caso realizamos un tema llamado ´Compras_oasis´.
+En este caso realizamos un tema llamado `Compras_oasis`.
 
 Luego pasamos a Cloud Functions. 
 
 **Google Cloud Functions** es una plataforma poderosa y flexible para ejecutar código en respuesta a eventos, facilitando la creación de aplicaciones y servicios altamente escalables y eficientes, sin necesidad de gestionar ni aprovisionar servidores.
 
-Dentro, iremos a ´+ CREAR FUNCION´,  en aspectos básicos, pusimos entorno de 2° gen. El nombre de la función que ibamos a realizar, en nuestro caso ´Activar_compras´, elegimos la región southamerica-east1 (São Paulo) que es la región la misma zona horaria que argentina. 
+Dentro, iremos a `+ CREAR FUNCION`,  en aspectos básicos, pusimos entorno de 2° gen. El nombre de la función que ibamos a realizar, en nuestro caso `Activar_compras`, elegimos la región southamerica-east1 (São Paulo) que es la región la misma zona horaria que argentina. 
 
-En Activador, elegiremos que el tipo de Activador sea Cloud Pub/Sub y el tema elegido será ´Compras_oasis´, el que creamos anteriormente.
- y pondremos ´SIGUIENTE´.
+En Activador, elegiremos que el tipo de Activador sea Cloud Pub/Sub y el tema elegido será `Compras_oasis`, el que creamos anteriormente.
+ y pondremos `SIGUIENTE`.
 
-En Entorno de ejecución seleccionamos Python 3.10, y en codigo fuente seleccionamos ´Editor directo´.
-Dentro de esto se crearan automaticamente dos archivos, ´main.py´ y ´requirements.txt´.
-Punto de partida elegiremos el nombre de la función que llamaremos a continuacion ¨load_data_to_bigquery¨.
+En Entorno de ejecución seleccionamos Python 3.10, y en codigo fuente seleccionamos `Editor directo`.
+Dentro de esto se crearan automaticamente dos archivos, `main.py` y `requirements.txt`.
+Punto de partida elegiremos el nombre de la función que llamaremos a continuacion `¨load_data_to_bigquery¨`.
 
-En ´main.py´ colocaremos el código Python de que ejecute lo que necesitamos. En nuestro caso, estaremos llamando a las entradas con fecha de hoy, de un archivo de Google SpreadSheets guardado en Google Drive, de la tabla COMPRAS. 
+En `main.py` colocaremos el código Python de que ejecute lo que necesitamos. En nuestro caso, estaremos llamando a las entradas con fecha de hoy, de un archivo de Google SpreadSheets guardado en Google Drive, de la tabla COMPRAS. 
 
 
 ```sql
@@ -119,7 +119,7 @@ def load_data_to_bigquery(event, context):
     return 'Procesamiento completado.'
 ```
 
-En ´requirements.txt´  se escribiran todas las dependencias que el código necesita para ejecutarse correctamente en Google Cloud Functions. 
+En `requirements.txt`  se escribiran todas las dependencias que el código necesita para ejecutarse correctamente en Google Cloud Functions. 
 
 
 ```sql
@@ -146,7 +146,7 @@ En nuestro caso, publicará el Pub/Sub creado inicial.
 
 
 Primero, definimos el programa.
-Le pondremos un nombre al programa, en nuestro caso será ´Actualizar_compras´, elegimos la misma region que veniamos trabajando, le agregamos una breve descripción de lo que hará el programa, y programaremos la frecuencia.
+Le pondremos un nombre al programa, en nuestro caso será `Actualizar_compras`, elegimos la misma region que veniamos trabajando, le agregamos una breve descripción de lo que hará el programa, y programaremos la frecuencia.
 
 La frecuencia se especifica con el formato Cron, que funciona de la siguiente  forma
 
