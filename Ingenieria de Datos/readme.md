@@ -18,7 +18,7 @@
 PROCESO ETL: EXTRAER - TRANSFORMAR - CARGAR
 
 #### EXTRACCIÓN:
-Los archivos CSV fueron descargados desde [Kaggle](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study). 
+El [Dataset: Inventory Analysis Case Study](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study) fue extraído desde kaggle. Contiene 6 archivos `.CSV`: 
 - 2017PurchasePricesDec.csv
 - BegInvFINAL12312016.csv
 - EndInvFINAL12312016.csv
@@ -27,7 +27,7 @@ Los archivos CSV fueron descargados desde [Kaggle](https://www.kaggle.com/datase
 - SalesFINAL12312016.csv
 
 #### TRANSFORMACIÓN: 
-Los datos fueron transformados y limpiados en Python, por el área de Análisis de Datos (ajuntar su readme). Donde quedaron 9 archivos csv: 
+El área de Análisis de Datos (ajuntar su readme), realizó el proceso de limpieza y transformación de los datos, en `Python`, donde quedaron 9 archivos csv: 
 - COMPRA.csv
 - DETALLE_COMPRA.csv
 - INVENTARIO_FINAL.csv
@@ -37,6 +37,8 @@ Los datos fueron transformados y limpiados en Python, por el área de Análisis 
 - PROVEEDOR.csv
 - TIENDA.csv
 - VENTA.csv
+
+Toque AQUÍ(link) para acceder al readme del área de aná
 
 #### ALMACENAMIENTO INTERMEDIO:
 Los CSV limpios se guardaron en Google Drive.
