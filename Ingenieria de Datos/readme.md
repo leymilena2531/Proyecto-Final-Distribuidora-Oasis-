@@ -83,6 +83,7 @@ Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIEN
 
 
 |**    APIS UTILIZADAS**      |
+| --------------------------- | 
 |Dataform API	359	0	42	252	  |
 |Data Lineage API	            |
 |Cloud Dataplex API		        |
