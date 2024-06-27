@@ -1,19 +1,16 @@
-# ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO
+# 🌐 ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO
 
-## ÁREA DE INGENIERÍA DE DATOS
+## ⚙️ ÁREA DE INGENIERÍA DE DATOS
 
 ### 🎯 Objetivo: automatizar la ingesta de datos nuevos. 
 
-Beneficios: 
+☑️ Beneficios: 
 
 **Eficiencia Mejorada:** Elimina la necesidad de procesos manuales repetitivos, reduciendo el tiempo y esfuerzo necesarios para la actualización de datos.
 
 **Disponibilidad de Datos en Tiempo Real:** Proporciona acceso a datos actualizados en tiempo real, lo que es esencial para la toma de decisiones rápida y eficaz.
 
 **Escalabilidad:** 
-
-
-
 
 
 ## PIPELINE DE DATOS
@@ -50,6 +47,8 @@ CARGA EN BIGQUERY: Los archivos CSV almacenados en Google Drive se importaron a 
 
 Para la carga de datos en BigQuery, se añadió un **proyecto** llamado: `Soluciones Analíticas PF`, **ID de proyecto:** `neural-ripple-426817-v0`. Se creó un **conjunto de datos:** `BD_OASIS` donde fueron añadidas las 9 tablas mediante código de Python desde Google Colab mencionado anteriormente.
 
+Credenciales para poder acceder con las APIS. 
+
 Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
 
 #### Crear Esquema de Tabla de Movimiento de Inventario
@@ -80,6 +79,10 @@ Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIEN
 7  );
 ```
 
+
+****Tecnologías y Herramientas Utilizadas
+
+Google Sheets, Google Colab, Google Cloud Platform, BigQuery, 
 
 
 |    **APIS UTILIZADAS**      |
