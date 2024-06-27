@@ -13,37 +13,10 @@
 ### **Escalabilidad:** 
 
 
-## PIPELINE DE DATOS
+# PIPELINE
 
-PROCESO ETL: EXTRAER - TRANSFORMAR - CARGAR
+#### EXTRACCIÓN: 
 
-#### EXTRACCIÓN:
-El [Dataset: Inventory Analysis Case Study](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study) fue extraído desde kaggle. Contiene 6 archivos `.CSV`: 
-- 2017PurchasePricesDec.csv
-- BegInvFINAL12312016.csv
-- EndInvFINAL12312016.csv
-- InvoicePurchases12312016.csv
-- PurchasesFINAL12312016.csv
-- SalesFINAL12312016.csv
-
-#### TRANSFORMACIÓN: 
-El área de Análisis de Datos (ajuntar su readme), realizó el proceso de limpieza y transformación de los datos, en `Python`, donde quedaron 9 archivos csv: 
-- COMPRA.csv
-- DETALLE_COMPRA.csv
-- INVENTARIO_FINAL.csv
-- INVENTARIO_INICIAL.csv
-- PRODUCTO_PROVEEDOR.csv
-- PRODUCTO.csv
-- PROVEEDOR.csv
-- TIENDA.csv
-- VENTA.csv
-
-Toque AQUÍ(link) para acceder al readme del área de aná
-
-#### ALMACENAMIENTO INTERMEDIO:
-Los CSV limpios se guardaron en Google Drive.
-
-#### CARGA EN BIGQUERY: 
 Los archivos CSV almacenados en Google Drive se importaron a [Google Cloud Platform](https://cloud.google.com/?_gl=1*6gcnrv*_up*MQ..&gclid=CjwKCAjw-O6zBhASEiwAOHeGxXc4YZx6SNH1EHwvQgGmacSJnslZSK8XEbOaI-IYDAFV-nnJz4emIxoCwYcQAvD_BwE&gclsrc=aw.ds&hl=es_419), en Datawarehouse BigQuery, utilizando código de Python en [Google Colaboratory](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1) 
 
 (ajuntar pipepline hecho en draw.io) 
