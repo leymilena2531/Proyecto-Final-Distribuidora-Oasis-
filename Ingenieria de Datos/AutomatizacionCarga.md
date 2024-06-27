@@ -150,13 +150,14 @@ Le pondremos un nombre al programa, en nuestro caso será `Actualizar_compras`, 
 
 La frecuencia se especifica con el formato Cron, que funciona de la siguiente  forma
 
-'* * * * *'
+```sql
+* * * * *
 │ │ │ │ │
 │ │ │ │ └─ Día de la semana (0 - 7) (Domingo = 0 o 7)
 │ │ │ └─── Mes (1 - 12)
 │ │ └───── Día del mes (1 - 31)
 │ └─────── Hora (0 - 23)
 └───────── Minuto (0 - 59)
-
+```
 
 En nuestro caso, para "59 23 * * *" significará que todos los días las 23:59 se ejecutará la acción, donde todos las filas con fecha del dia entrarán a la tabla COMPRA. 
