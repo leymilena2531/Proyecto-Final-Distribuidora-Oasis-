@@ -30,7 +30,9 @@ CARGA DE DATOS: Se cargaron de [Google Cloud Platform](https://cloud.google.com/
 
 ### 1- Carga de archivos CSV desde Google Drive a BigQuery usando Google Colab
 
-En este COLAB haremos la carga de los .csv desde Google Drive a BigQuery que fueron creados a partir de la limpieza realizada en Python, de los datasets otorgados por la empresa.
+Google Colaboratory la carga de los .csv desde Google Drive a BigQuery que fueron creados a partir de la limpieza realizada en Python, de los datasets otorgados por la empresa.
+Este entorno permite a los usuarios escribir y ejecutar código Python directamente en el navegador, facilitando la colaboración en tiempo real al compartir el notebook con el grupo.
+
 
 Acceso al archivo de [Google Colaboratory](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1)
 
