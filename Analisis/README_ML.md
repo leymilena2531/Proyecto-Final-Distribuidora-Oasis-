@@ -28,14 +28,17 @@ Esto permitirá una gestión más eficiente del inventario y una planificación 
 
 ## Previsualización de datos
 ### Visualizamos las primeras filas del conjunto de datos para entender su estructura.
-Entrada: VENTAS.csv
-Salida: Dataframe "ventas"
+Entrada: VENTAS.csv<br>
+Salida: Dataframe "ventas"<br>
+
 ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/09029698-6cce-4c54-8a6c-5b53a2991ee2)
-Entrada: ventas.info() Información general del conjunto de datos.
-Salida: Resumen de información sobre el conjunto de datos, incluyendo tipos de datos, valores no nulos y uso de memoria
+Entrada: ventas.info() Información general del conjunto de datos.<br>
+Salida: Resumen de información sobre el conjunto de datos, incluyendo tipos de datos, valores no nulos y uso de memoria.<br>
+
 ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/07cb96ed-20c8-4746-9714-9b3ad7a8c39e)
-Entrada: ventas.describe() Estadísticas descriptivas del conjunto de datos
-Salida: Resumen de estadísticas descriptivas, como recuento, media, desviación estándar, mínimo, percentiles y máximo
+Entrada: ventas.describe() Estadísticas descriptivas del conjunto de datos<br>
+Salida: Resumen de estadísticas descriptivas, como recuento, media, desviación estándar, mínimo, percentiles y máximo.<br>
+
 ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/8f0768ab-daa4-4533-8113-b6c98878acc2)
 
 ## Análisis exploratorio de datos
@@ -85,6 +88,12 @@ Las predicciones se agregan al DataFrame cantidad_enero como la columna "predicc
 Se crea un gráfico interactivo utilizando Plot
 ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/17a9b6c7-11c8-4a8a-a13c-7b813fdd72f3)
 ### Cálculo de Métricas de Precisión
+<b>Resultados: </b><br>
+RMSE: 2657.9381532484854<br>
+MAE: 1956.8224091599516<br>
+R²: 0.9928043826563062<br>
+R² ajustado: 0.9652211828388134<br>
+
 ## Función para Predecir Ventas Futuras
 Se Realiza predicciones de ventas futuras para un período específico.
 <li><b>Parámetros:</b>
@@ -100,7 +109,7 @@ predicciones = predecir_ventas('2016-01-01', 2)
 ### Obtener la Predicción para una Fecha Específica
 Definir la entrada de la fecha '2016-01-20' para obtener la predicción de la cantidad de ventas
 fecha_especifica = pd.to_datetime('2016-01-20')
-<li><b>Resultados </b><br>
+<b>Resultado: </b><br>
 <b>Predicción venta:</b> 2016-01-20: 53862
 
 
