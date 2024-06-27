@@ -1,12 +1,13 @@
-Antes de iniciar cualquier proceso de automatización se deberá contar con el archivo .json con las credenciales del proyecto del que vamos a trabajar. En nuestro caso será `neural-ripple-426817-v0-65c1b31ad608`
 
-En primer lugar en Pub/Sub, se creó un tema por cada tarea que vamos a automatizar `CREAR TEMA`
+## Automatización de carga de entradas nuevas a la tabla COMPRA
+
+
+Antes de iniciar cualquier proceso de automatización se deberá contar con el archivo .json con las credenciales del proyecto  `neural-ripple-426817-v0-65c1b31ad608.json`.
 
 **Google Cloud Pub/Sub** (Publish/Subscribe) es un servicio de mensajería en tiempo real y escalable que facilita la comunicación entre diferentes componentes de aplicaciones distribuidas en Google Cloud Platform (GCP).
-
 Pub/Sub puede manejar grandes volúmenes de mensajes y escalar automáticamente según la demanda.
 
-Lo primero que haremos dentro de este coso es `CREAR TEMA`.
+Lo primero que haremos dentro de este servicio es `CREAR TEMA`.
 
 Un tema es un canal de comunicación al que los editores envían mensajes. Los temas son puntos de acceso a los que los mensajes son enviados.
 
@@ -16,18 +17,17 @@ En este caso realizamos un tema llamado `Compras_oasis`.
 
 Luego pasamos a Cloud Functions. 
 
-**Google Cloud Functions** es una plataforma poderosa y flexible para ejecutar código en respuesta a eventos, facilitando la creación de aplicaciones y servicios altamente escalables y eficientes, sin necesidad de gestionar ni aprovisionar servidores.
+**Google Cloud Functions** es una plataforma  para ejecutar código en respuesta a eventos, facilitando la creación de aplicaciones y servicios altamente escalables y eficientes, sin necesidad de gestionar ni aprovisionar servidores.
 
-Dentro, iremos a `+ CREAR FUNCION`,  en aspectos básicos, pusimos entorno de 2° gen. El nombre de la función que ibamos a realizar, en nuestro caso `Activar_compras`, elegimos la región southamerica-east1 (São Paulo) que es la región la misma zona horaria que argentina. 
+Dentro, iremos a ` CREAR FUNCION`,  en aspectos básicos, pusimos entorno de 2° gen. El nombre de la función que ibamos a realizar, en nuestro caso `Activar_compras`, elegimos la región southamerica-east1 (São Paulo) que es la región la misma zona horaria que Argentina. 
 
-En Activador, elegiremos que el tipo de Activador sea Cloud Pub/Sub y el tema elegido será `Compras_oasis`, el que creamos anteriormente.
- y pondremos `SIGUIENTE`.
+En Activador, el tipo de activador elegido es Cloud Pub/Sub y el tema  será `Compras_oasis`, el que creamos anteriormente.
 
-En Entorno de ejecución seleccionamos Python 3.10, y en codigo fuente seleccionamos `Editor directo`.
+En Entorno de ejecución seleccionamos Python 3.10, y en código fuente seleccionamos `Editor directo`.
 Dentro de esto se crearan automaticamente dos archivos, `main.py` y `requirements.txt`.
-Punto de partida elegiremos el nombre de la función que llamaremos a continuacion `¨load_data_to_bigquery¨`.
+Punto de partida elegimos el nombre de la función que llamaremos a continuacion `¨load_data_to_bigquery¨`.
 
-En `main.py` colocaremos el código Python de que ejecute lo que necesitamos. En nuestro caso, estaremos llamando a las entradas con fecha de hoy, de un archivo de Google SpreadSheets guardado en Google Drive, de la tabla COMPRAS. 
+En `main.py` colocaremos el script Python que ejecute lo que necesitamos. En nuestro caso, llamamos a las entradas con fecha de hoy, de un archivo de Google SpreadSheets guardado en Google Drive, de la tabla COMPRAS. 
 
 
 ```sql
@@ -119,7 +119,7 @@ def load_data_to_bigquery(event, context):
     return 'Procesamiento completado.'
 ```
 
-En `requirements.txt`  se escribiran todas las dependencias que el código necesita para ejecutarse correctamente en Google Cloud Functions. 
+En `requirements.txt`  se escribe todas las dependencias que el código necesita para ejecutarse correctamente en Google Cloud Functions. 
 
 
 ```sql
@@ -128,9 +128,9 @@ google-cloud-bigquery
 google-auth
 google-auth-oauthlib
 google-auth-httplib2
-gspread==4.0.1  # Asegúrate de especificar la versión si lo necesitas
-pandas==1.4.0   # Especifica una versión de Pandas compatible
-numpy==1.22.3   # Especifica una versión de NumPy compatible
+gspread==4.0.1  # Especificar la versión si lo necesitas
+pandas==1.4.0   # Especificar una versión de Pandas compatible
+numpy==1.22.3   # Especificar una versión de NumPy compatible
 ```
 
 Luego de esto, haremos probar función.
