@@ -2,22 +2,23 @@
 
 ## ⚙️ ÁREA DE INGENIERÍA DE DATOS
 
-### 🎯 Objetivo: automatizar la ingesta de datos nuevos. 
+## 🎯 Objetivo: automatizar la ingesta de datos nuevos. 
 
 ☑️ Beneficios: 
 
-**Eficiencia Mejorada:** Elimina la necesidad de procesos manuales repetitivos, reduciendo el tiempo y esfuerzo necesarios para la actualización de datos.
+### **Eficiencia Mejorada:** Elimina la necesidad de procesos manuales repetitivos, reduciendo el tiempo y esfuerzo necesarios para la actualización de datos.
 
-**Disponibilidad de Datos en Tiempo Real:** Proporciona acceso a datos actualizados en tiempo real, lo que es esencial para la toma de decisiones rápida y eficaz.
+### **Disponibilidad de Datos en Tiempo Real:** Proporciona acceso a datos actualizados en tiempo real, lo que es esencial para la toma de decisiones rápida y eficaz.
 
-**Escalabilidad:** 
+### **Escalabilidad:** 
 
 
 ## PIPELINE DE DATOS
 
 PROCESO ETL: EXTRAER - TRANSFORMAR - CARGAR
 
-EXTRACCIÓN: Los archivos CSV fueron descargados desde [Kaggle](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study). 
+#### EXTRACCIÓN:
+Los archivos CSV fueron descargados desde [Kaggle](https://www.kaggle.com/datasets/bhanupratapbiswas/inventory-analysis-case-study). 
 - 2017PurchasePricesDec.csv
 - BegInvFINAL12312016.csv
 - EndInvFINAL12312016.csv
@@ -25,7 +26,8 @@ EXTRACCIÓN: Los archivos CSV fueron descargados desde [Kaggle](https://www.kagg
 - PurchasesFINAL12312016.csv
 - SalesFINAL12312016.csv
 
-TRANSFORMACIÓN: Los datos fueron transformados y limpiados en Python, por el área de Análisis de Datos (ajuntar su readme). Donde quedaron 9 archivos csv: 
+#### TRANSFORMACIÓN: 
+Los datos fueron transformados y limpiados en Python, por el área de Análisis de Datos (ajuntar su readme). Donde quedaron 9 archivos csv: 
 - COMPRA.csv
 - DETALLE_COMPRA.csv
 - INVENTARIO_FINAL.csv
@@ -36,9 +38,11 @@ TRANSFORMACIÓN: Los datos fueron transformados y limpiados en Python, por el á
 - TIENDA.csv
 - VENTA.csv
 
-ALMACENAMIENTO INTERMEDIO: Los CSV limpios se guardaron en Google Drive.
+#### ALMACENAMIENTO INTERMEDIO:
+Los CSV limpios se guardaron en Google Drive.
 
-CARGA EN BIGQUERY: Los archivos CSV almacenados en Google Drive se importaron a [Google Cloud Platform](https://cloud.google.com/?_gl=1*6gcnrv*_up*MQ..&gclid=CjwKCAjw-O6zBhASEiwAOHeGxXc4YZx6SNH1EHwvQgGmacSJnslZSK8XEbOaI-IYDAFV-nnJz4emIxoCwYcQAvD_BwE&gclsrc=aw.ds&hl=es_419), en Datawarehouse BigQuery, utilizando código de Python en [Google Colaboratory](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1) 
+#### CARGA EN BIGQUERY: 
+Los archivos CSV almacenados en Google Drive se importaron a [Google Cloud Platform](https://cloud.google.com/?_gl=1*6gcnrv*_up*MQ..&gclid=CjwKCAjw-O6zBhASEiwAOHeGxXc4YZx6SNH1EHwvQgGmacSJnslZSK8XEbOaI-IYDAFV-nnJz4emIxoCwYcQAvD_BwE&gclsrc=aw.ds&hl=es_419), en Datawarehouse BigQuery, utilizando código de Python en [Google Colaboratory](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1) 
 
 (ajuntar pipepline hecho en draw.io) 
 
@@ -78,6 +82,13 @@ Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIEN
 6      Fecha_fin DATE
 7  );
 ```
+
+
+
+
+
+
+
 
 
 ****Tecnologías y Herramientas Utilizadas
