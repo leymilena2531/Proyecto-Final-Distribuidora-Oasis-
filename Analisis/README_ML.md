@@ -51,16 +51,57 @@ Media Mensual de Ventas: Mensualmente, la distribuidora vende alrededor de 1,225
 <li><b>Calculo de Outliers detectados: </b><br>
  Fecha_venta    Cantidad<br>
  2016-01-29     180426 <br>
+
+## Visualización Gráfica de los Resultados <br>
+El grafico de la cantidad de ventas muestra que la mayoría de las ventas de la distribuidora de bebidas se concentran entre 25,000 y 100,000 unidades, con una mediana que indica el valor central de esta distribución.
   
  ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/b10368ed-2bbb-49b0-be97-2d7ee56830d1)
+
+El diagrama de dispersión de las ventas diarias con límites de outliers proporciona una visión clara de cómo varían las ventas a lo largo del tiempo y ayuda a identificar días con ventas inusualmente altas o bajas.
 
  ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/16edaf86-096f-4053-a1ee-e257045017d8)
 
 <br>
-##Previsión de la demanda:<br>
+
+## Previsión de la demanda: <br>
 Podemos definir la cantidad de ventas como demanda. En el gráfico se observa un factor de estacionalidad que afecta de forma semanal y el mensual.
 Podemos ver que el primer pico de demanda se produce el 2 de enero, que es jueves/viernes, y que cada jueves/viernes se alcanza el pico y baja el domingo. El pico de demanda se produce el 29 de enero (que de nuevo es jueves/viernes) con 180.000 ventas, pero al acercarse febrero baja instantáneamente y sólo alcanza un máximo de 16.700, lo que supone sólo un 9%. Esto indica que hay estacionalidad mensual.<br>
 Por lo que nos centramos en realizar el analisis predictivo en fechas del 01/01/2016 al 31/01/2016
+
+### Filtrado de Datos
+En primer lugar, se filtran los datos de ventas para incluir solo aquellas transacciones con una cantidad vendida mayor a cero. Esto elimina registros no relevantes o errores en los datos.
+Luego, se seleccionan las ventas correspondientes al mes de enero de 2016.
+### Creación del DataFrame
+Se agrupan las ventas por fecha ("Fecha_venta") y se calcula la suma total de la cantidad vendida para cada fecha. Esto crea un nuevo DataFrame llamado cantidad_enero.
+### Configuración del Proceso Determinístico
+Se configura un proceso determinístico para modelar las tendencias y estacionalidades en los datos de ventas. Utilizamos la clase CalendarFourier para crear componentes estacionales (en este caso, frecuencia mensual).
+### Normalización de Características
+Se utiliza StandardScaler para normalizar las características del proceso determinístico. Esto es importante para que las características tengan una escala comparable y no afecten negativamente el rendimiento del modelo.
+### Ajuste del Modelo de Regresión Lineal
+Se crea un modelo de Regresión Lineal y se ajusta a las características normalizadas (X_scaled) y la cantidad vendida (cantidad_enero['Cantidad']). El objetivo es predecir la cantidad vendida.
+### Predicciones y Gráfico Interactivo
+Se realizan predicciones en el conjunto de entrenamiento utilizando el modelo de regresión lineal.
+Las predicciones se agregan al DataFrame cantidad_enero como la columna "prediccion".
+Se crea un gráfico interactivo utilizando Plot
+![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/17a9b6c7-11c8-4a8a-a13c-7b813fdd72f3)
+### Cálculo de Métricas de Precisión
+## Función para Predecir Ventas Futuras
+Se Realiza predicciones de ventas futuras para un período específico.
+<li><b>Parámetros:</b>
+fecha_inicio: Fecha a partir de la cual se realizarán las predicciones (formato 'YYYY-MM-DD').
+meses_futuros: Número de meses para predecir hacia el futuro.
+<li><b>Retorna:</b>
+predicciones_futuras: Serie temporal con las predicciones de ventas.
+
+ ###  Predicciones para los Próximos Dos Meses
+Se define predecir ventas para los próximos dos meses a partir de enero
+predicciones = predecir_ventas('2016-01-01', 2)
+
+### Obtener la Predicción para una Fecha Específica
+Definir la entrada de la fecha '2016-01-20' para obtener la predicción de la cantidad de ventas
+fecha_especifica = pd.to_datetime('2016-01-20')
+<li><b>Resultados </b><br>
+<b>Predicción venta:</b> 2016-01-20: 53862
 
 
 
