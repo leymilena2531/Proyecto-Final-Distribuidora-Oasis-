@@ -65,34 +65,21 @@ Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIEN
 7      ProductoID INT64,
 8      Cantidad INT64
 9  );
-
-
-
 ```
-#CREAR ESQUEMA DE TABLA DE MOVIMIENTO DE INVENTARIO
 
-CREATE TABLE `neural-ripple-426817-v0.BD_OASIS.MOVIMIENTO_DE_INVENTARIO` (
-    MovimientoID INT64,
-    InventarioID STRING,
-    Detalle_compraID INT64,
-    VentaID INT64,
-    TiendaID INT64,
-    ProductoID INT64,
-    Cantidad INT64
-);
+## Crear Esquema de Tabla de Inventario Real
+
+```sql
+-- CREAR ESQUEMA DE TABLA DE INVENTARIO REAL
+1  CREATE TABLE `neural-ripple-426817-v0.BD_OASIS.INVENTARIO_REAL` (
+2      InventarioID STRING,
+3      TiendaID INT64,
+4      ProductoID INT64,
+5      Stock INT64,
+6      Fecha_fin DATE
+7  );
 ```
 
 
-```
-# CREAR ESQUEMA DE TABLA DE INVENTARIO REAL
-
-CREATE TABLE `neural-ripple-426817-v0.BD_OASIS.INVENTARIO_REAL` (
-    InventarioID STRING,
-    TiendaID INT64,
-    ProductoID INT64,
-    Stock INT64,
-    Fecha_fin DATE
-);
-```
 
 APIS UTILIZADAS: 
