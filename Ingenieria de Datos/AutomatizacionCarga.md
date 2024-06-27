@@ -150,7 +150,7 @@ Le pondremos un nombre al programa, en nuestro caso será `Actualizar_compras`, 
 
 La frecuencia se especifica con el formato Cron, que funciona de la siguiente  forma
 
-* * * * *
+'* * * * *'
 │ │ │ │ │
 │ │ │ │ └─ Día de la semana (0 - 7) (Domingo = 0 o 7)
 │ │ │ └─── Mes (1 - 12)
