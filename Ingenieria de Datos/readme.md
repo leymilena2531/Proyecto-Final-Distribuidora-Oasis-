@@ -48,7 +48,7 @@ CARGA EN BIGQUERY: Los archivos CSV almacenados en Google Drive se importaron a 
 
 ## Estructura en GOOGLE CLOUD PLATFORM
 
-Para la carga de datos en BigQuery, se añadió un **proyecto** llamado: Soluciones Analíticas PF, **ID de proyecto:** neural-ripple-426817-v0. Se creó un **conjunto de datos:** BD_OASIS donde fueron añadidas las 9 tablas mediante código de Python desde Google Colab mencionado anteriormente.
+Para la carga de datos en BigQuery, se añadió un **proyecto** llamado: `Soluciones Analíticas PF`, **ID de proyecto:** `neural-ripple-426817-v0`. Se creó un **conjunto de datos:** `BD_OASIS` donde fueron añadidas las 9 tablas mediante código de Python desde Google Colab mencionado anteriormente.
 
 Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
 
@@ -82,4 +82,36 @@ Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIEN
 
 
 
-APIS UTILIZADAS: 
+|**    APIS UTILIZADAS**      |
+|Dataform API	359	0	42	252	  |
+|Data Lineage API	            |
+|Cloud Dataplex API		        |
+|BigQuery API	                |
+|Cloud Functions API		      |
+|Artifact Registry API		    |
+|Cloud Build API		          |
+Analytics Hub API					
+Apps Script API					
+BigQuery Connection API					
+BigQuery Data Policy API					
+BigQuery Data Transfer API					
+BigQuery Migration API					
+BigQuery Reservation API					
+BigQuery Storage API					
+Cloud Logging API					
+Cloud Pub/Sub API					
+Cloud Resource Manager API					
+Cloud Run Admin API					
+Cloud Scheduler API					
+Cloud Storage					
+Cloud Trace API					
+Container Registry API					
+Database Migration API					
+Drive Labels API					
+Eventarc API					
+Google Cloud Storage JSON API					
+Google Drive API					
+Google Sheets API					
+IAM Service Account Credentials API					
+Identity and Access Management (IAM) API					
+Legacy Cloud Source Repositories API
