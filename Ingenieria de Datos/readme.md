@@ -52,7 +52,7 @@ Para la carga de datos en BigQuery, se añadió un **proyecto** llamado: Solucio
 
 Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
 
-## Crear Esquema de Tabla de Movimiento de Inventario
+#### Crear Esquema de Tabla de Movimiento de Inventario
 
 ```sql
 -- CREAR ESQUEMA DE TABLA DE MOVIMIENTO DE INVENTARIO
@@ -67,7 +67,7 @@ Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIEN
 9  );
 ```
 
-## Crear Esquema de Tabla de Inventario Real
+#### Crear Esquema de Tabla de Inventario Real
 
 ```sql
 -- CREAR ESQUEMA DE TABLA DE INVENTARIO REAL
