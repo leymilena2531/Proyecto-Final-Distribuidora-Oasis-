@@ -1,4 +1,4 @@
-Antes de iniciar cualquier proceso de automatización se deberá contar con el archivo .json con las credenciales del proyecto del que vamos a trabajar. En nuestro caso será neural-ripple-426817-v0-65c1b31ad608´
+Antes de iniciar cualquier proceso de automatización se deberá contar con el archivo .json con las credenciales del proyecto del que vamos a trabajar. En nuestro caso será ´neural-ripple-426817-v0-65c1b31ad608´
 
 En primer lugar en Pub/Sub, se creó un tema por cada tarea que vamos a automatizar `CREAR TEMA`
 
