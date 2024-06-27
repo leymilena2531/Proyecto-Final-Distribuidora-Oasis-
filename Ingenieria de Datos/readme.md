@@ -28,7 +28,7 @@ EXTRACCIÓN: Los archivos CSV fueron descargados desde [Kaggle](https://www.kagg
 - PurchasesFINAL12312016.csv
 - SalesFINAL12312016.csv
 
-TRANSFORMACIÓN: Los datos fueron transformados y limpiados utilizando Python, por el área de Análisis de Datos (ajuntar link de ypnb). Donde quedaron 9 archivos csv: 
+TRANSFORMACIÓN: Los datos fueron transformados y limpiados en Python, por el área de Análisis de Datos (ajuntar su readme). Donde quedaron 9 archivos csv: 
 - COMPRA.csv
 - DETALLE_COMPRA.csv
 - INVENTARIO_FINAL.csv
@@ -52,11 +52,27 @@ Para la carga de datos en BigQuery, se añadió un **proyecto** llamado: Solucio
 
 Desde *BigQuery* se creó la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
 
-```Python
+## Crear Esquema de Tabla de Movimiento de Inventario
+
+```sql
+-- CREAR ESQUEMA DE TABLA DE MOVIMIENTO DE INVENTARIO
+1  CREATE TABLE `neural-ripple-426817-v0.BD_OASIS.MOVIMIENTO_DE_INVENTARIO` (
+2      MovimientoID INT64,
+3      InventarioID STRING,
+4      Detalle_compraID INT64,
+5      VentaID INT64,
+6      TiendaID INT64,
+7      ProductoID INT64,
+8      Cantidad INT64
+9  );
+
+
+
+```
 #CREAR ESQUEMA DE TABLA DE MOVIMIENTO DE INVENTARIO
 
 CREATE TABLE `neural-ripple-426817-v0.BD_OASIS.MOVIMIENTO_DE_INVENTARIO` (
-	MovimientoID INT64,
+    MovimientoID INT64,
     InventarioID STRING,
     Detalle_compraID INT64,
     VentaID INT64,
