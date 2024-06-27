@@ -2,7 +2,7 @@ Antes de iniciar cualquier proceso de automatización se deberá contar con el a
 
 En primer lugar en Pub/Sub, se creó un tema por cada tarea que vamos a automatizar `CREAR TEMA`
 
-**Google Cloud Pub/Sub (Publish/Subscribe)** es un servicio de mensajería en tiempo real y escalable que facilita la comunicación entre diferentes componentes de aplicaciones distribuidas en Google Cloud Platform (GCP).
+**Google Cloud Pub/Sub** (Publish/Subscribe) es un servicio de mensajería en tiempo real y escalable que facilita la comunicación entre diferentes componentes de aplicaciones distribuidas en Google Cloud Platform (GCP).
 
 Pub/Sub puede manejar grandes volúmenes de mensajes y escalar automáticamente según la demanda.
 
