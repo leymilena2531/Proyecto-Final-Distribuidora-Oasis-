@@ -32,10 +32,13 @@ Entrada: VENTAS.csv<br>
 Salida: Dataframe "ventas"<br>
 
 ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/09029698-6cce-4c54-8a6c-5b53a2991ee2)
+<br>
 Entrada: ventas.info() Información general del conjunto de datos.<br>
 Salida: Resumen de información sobre el conjunto de datos, incluyendo tipos de datos, valores no nulos y uso de memoria.<br>
-
+<br>
 ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/07cb96ed-20c8-4746-9714-9b3ad7a8c39e)
+<br>
+
 Entrada: ventas.describe() Estadísticas descriptivas del conjunto de datos<br>
 Salida: Resumen de estadísticas descriptivas, como recuento, media, desviación estándar, mínimo, percentiles y máximo.<br>
 
@@ -60,11 +63,10 @@ El grafico de la cantidad de ventas muestra que la mayoría de las ventas de la 
   
  ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/b10368ed-2bbb-49b0-be97-2d7ee56830d1)
 
-El diagrama de dispersión de las ventas diarias con límites de outliers proporciona una visión clara de cómo varían las ventas a lo largo del tiempo y ayuda a identificar días con ventas inusualmente altas o bajas.
-
+El diagrama de dispersión de las ventas diarias con límites de outliers proporciona una visión clara de cómo varían las ventas a lo largo del tiempo y ayuda a identificar días con ventas inusualmente altas o bajas.<br>
  ![image](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/30348827/16edaf86-096f-4053-a1ee-e257045017d8)
 
-<br>
+
 
 ## Previsión de la demanda: <br>
 Podemos definir la cantidad de ventas como demanda. En el gráfico se observa un factor de estacionalidad que afecta de forma semanal y el mensual.
