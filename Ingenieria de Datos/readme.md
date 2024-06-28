@@ -1,4 +1,6 @@
-# 📊 ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO - Área Ingeniería de Datos. 
+# 📊 ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO
+
+Área Ingeniería de Datos. 
 
 ## 🎯 Objetivo Principal: Automatizar la ingesta de datos nuevos. 
 
@@ -13,7 +15,7 @@ Se realizó la automatización de los registros nuevos cada 24 horas. Este proce
 4. **Escalabilidad:** Facilita la gestión de grandes volúmenes de datos y permite aumentar la capacidad según las necesidades del negocio sin comprometer el rendimiento. Esto asegura que la infraestructura tecnológica pueda crecer al mismo ritmo que la empresa.
 
 
-## GOOGLE CLOUD PLATFORM (GCP) 
+# GOOGLE CLOUD PLATFORM (GCP) 
 
 Es una plataforma integral de computación en la nube ofrecida por Google que proporciona una amplia gama de servicios de infraestructura, almacenamiento, bases de datos, análisis de datos, inteligencia artificial y aprendizaje automático para empresas de todos los tamaños y sectores.
 
@@ -41,19 +43,19 @@ Es una plataforma integral de computación en la nube ofrecida por Google que pr
 
 **Cloud Scheduler:**
 
-## PIPELINE:
+# PIPELINE:
 
 Es una serie de pasos que los datos atraviesan desde su origen hasta su destino final, pasando por procesos de extracción, transformación y carga (ETL). 
 
 El pipeline de Distribuidora Oasis automatiza los datos asegurando que los datos de inventario y ventas sean recopilados, procesados y cargados en el sistema de gestión de datos de manera eficiente y confiable cada 24 horas. Esto incluye:
 
-### 🛢️ EXTRACCIÓN: 
+## 🛢️ EXTRACCIÓN: 
 
 Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de datos por el Área de Ánálisis de Datos(link), se importaron a [Google Cloud Platform](https://cloud.google.com/?_gl=1*6gcnrv*_up*MQ..&gclid=CjwKCAjw-O6zBhASEiwAOHeGxXc4YZx6SNH1EHwvQgGmacSJnslZSK8XEbOaI-IYDAFV-nnJz4emIxoCwYcQAvD_BwE&gclsrc=aw.ds&hl=es_419), en Datawarehouse BigQuery, utilizando código de Python en [Google Colab](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1) 
 
 ![Pipeline drawio (3) 1](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/139195222/f7592c5f-a369-41fd-afa6-7c8c0f7800c3)
 
-### 🛠️ TRANSFORMACIÓN: 
+## 🛠️ TRANSFORMACIÓN: 
 
 **Realizada en BigQuery.**
 
@@ -147,7 +149,7 @@ Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de dat
 ```
 
 
-### 🔂 AUTOMATIZACIÓN: 
+## 🔂 AUTOMATIZACIÓN: 
 
 Para iniciar con el proceso de automatización se realizaron pasos previos: 
 1. Se importo cada archivo CSV a formato Google Sheets, guardados dentro de Google Drive. Donde la empresa ingresa registros nuevos todos los dias. 
@@ -320,3 +322,7 @@ Los registros nuevos que se ingresen por día serán actualizados en cada tabla 
 
 Google Drive, Google Spreadsheets, Google Colab, Google Cloud Platform, BigQuery, Cloud Storage, Pub/Sub, Cloud Functions, Cloud Scheduler. Draw.io. 
 
+
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
