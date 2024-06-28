@@ -31,15 +31,15 @@ Es una plataforma integral de computación en la nube ofrecida por Google que pr
 
 ## Recursos utilizados dentro de Cloud:
 
-**BigQuery:** utilizado como Datawarehouse. Crear esquema de tablas, insertar datos y consultas SQL. 
+**BigQuery:** Utilizado como Datawarehouse. Crear esquema de tablas, insertar datos y consultas SQL. 
 
-**Cloud Storage:** almacenar las credenciales en un Bucket.
+**Cloud Storage:** Almacena las credenciales en un Bucket.
 
-**Pub/sub:**
+**Pub/sub:** Servicio de creación de eventos.
 
-**Cloud Functions:**
+**Cloud Functions:** Ejecuta un código en respuesta a eventos.
 
-**Cloud Scheduler:**
+**Cloud Scheduler:** Planificación de la ejecución del evento creado.
 
 # PIPELINE:
 
@@ -150,7 +150,7 @@ Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de dat
 ## 🔂 AUTOMATIZACIÓN: 
 
 Para iniciar con el proceso de automatización se realizaron pasos previos: 
-1. Se importo cada archivo CSV a formato Google Sheets, guardados dentro de Google Drive. Donde la empresa ingresa registros nuevos todos los dias. 
+1. Se importó cada archivo CSV a formato Google Sheets, guardados dentro de Google Drive, donde la empresa ingresa registros nuevos todos los dias. 
 2. Asegurarse que el archivo `.json` con las credenciales del proyecto: `neural-ripple-426817-v0-65c1b31ad608.json`, esten guardadas dentro del Bucket en Cloud Storage.
 
 #### Pasos para realizar la **automatización de ingreso de datos nuevos en la tabla COMPRA**: 
@@ -170,15 +170,15 @@ Luego pasamos a Cloud Functions.
 
 2. 👉 **Google Cloud Functions** es una plataforma  para ejecutar código en respuesta a eventos, facilitando la creación de aplicaciones y servicios altamente escalables y eficientes, sin necesidad de gestionar ni aprovisionar servidores.
 
-Dentro, iremos a ` CREAR FUNCION`,  en aspectos básicos, pusimos entorno de 2° gen. El nombre de la función que ibamos a realizar, en nuestro caso `Activar_compras`, elegimos la región southamerica-east1 (São Paulo) que es la región la misma zona horaria que Argentina. 
+Dentro, iremos a ` CREAR FUNCION`.  En aspectos básicos pusimos entorno de 2° gen. Elegimos el nombre de la función que ibamos a realizar, en nuestro caso `Activar_compras`, y elegimos la región southamerica-east1 (São Paulo) que es la región la misma zona horaria que Argentina. 
 
-En Activador, el tipo de activador elegido es Cloud Pub/Sub y el tema  será `Compras_oasis`, el que creamos anteriormente.
+En Activador, el tipo de activador elegido es Cloud Pub/Sub y el tema será `Compras_oasis`, el que creamos anteriormente.
 
 En Entorno de ejecución seleccionamos Python 3.10, y en código fuente seleccionamos `Editor directo`.
 Dentro de esto se crearan automaticamente dos archivos, `main.py` y `requirements.txt`.
 Punto de partida elegimos el nombre de la función que llamaremos a continuacion `¨load_data_to_bigquery¨`.
 
-En `main.py` colocaremos el script Python que ejecute lo que necesitamos. En nuestro caso, llamamos a las entradas con fecha de hoy, de un archivo de Google SpreadSheets guardado en Google Drive, de la tabla COMPRAS. 
+En `main.py` colocaremos el script Python que ejecute lo que necesitamos. En nuestro caso, llamamos a las entradas con fecha de hoy de la tabla COMPRAS, que está  guardado en Google Drive como archivo de Google SpreadSheet. 
 
 
 ```sql
@@ -307,9 +307,9 @@ La frecuencia se especifica con el formato Cron, que funciona de la siguiente fo
 └───────── Minuto (0 - 59)
 ```
 
-En nuestro caso, para "59 23 * * *" significará que todos los días las 23:59 se ejecutará la acción, donde todos las filas con fecha del dia entrarán a la tabla COMPRA. 
+Elegimos "59 23 * * *",  que significará que todos los días las 23:59 se ejecutará la acción donde todos las filas con fecha del dia entrarán a la tabla COMPRA. 
 
-Una vez finalizada la programación, se ejecutará la carga automatica de datos.
+Una vez finalizada la programación, se ejecutará la carga automática de datos.
 
 ## 📊 CARGA: 
 
