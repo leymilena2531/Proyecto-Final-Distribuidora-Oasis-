@@ -161,3 +161,6 @@ La frecuencia se especifica con el formato Cron, que funciona de la siguiente fo
 ```
 
 En nuestro caso, para "59 23 * * *" significará que todos los días las 23:59 se ejecutará la acción, donde todos las filas con fecha del dia entrarán a la tabla COMPRA. 
+
+
+Una vez finalizada la programación, se ejecutará la carga automatica de datos.
