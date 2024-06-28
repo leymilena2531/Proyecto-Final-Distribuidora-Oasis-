@@ -1,4 +1,6 @@
-# 🌐 ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO - Área Ingeniería de Datos. 
+# 📊 ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO 📝
+
+## ⚙️ Área Ingeniería de Datos. 
 
 ## 🎯 Objetivo Principal: Automatizar la ingesta de datos nuevos. 
 
@@ -17,7 +19,7 @@ Se realizó la automatización de los registros nuevos cada 24 horas. Este proce
 
 Es una plataforma integral de computación en la nube ofrecida por Google que proporciona una amplia gama de servicios de infraestructura, almacenamiento, bases de datos, análisis de datos, inteligencia artificial y aprendizaje automático para empresas de todos los tamaños y sectores.
 
-Información del proyecto en GCP: 
+## Información del proyecto en GCP: 
 
 **Nombre del Proyecto** `Soluciones Analíticas PF`
 
@@ -29,37 +31,37 @@ Información del proyecto en GCP:
 
 **API´s utilizadas:** puede verlas [AQUÍ](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/blob/master/Ingenieria%20de%20Datos/API.md)
 
-### Recursos utilizados dentro de Cloud:
+## Recursos utilizados dentro de Cloud:
 
-BigQuery: utilizado como Datawarehouse. Crear esquema de tablas, insertar datos y consultas SQL. 
+**BigQuery:** utilizado como Datawarehouse. Crear esquema de tablas, insertar datos y consultas SQL. 
 
-Cloud Storage: almacenar las credenciales en un Bucket.
+**Cloud Storage:** almacenar las credenciales en un Bucket.
 
-Pub/sub:
+**Pub/sub:**
 
-Cloud Functions: 
+**Cloud Functions:**
 
-Cloud Scheduler: 
+**Cloud Scheduler:**
 
-# PIPELINE:
+## PIPELINE:
 
 Es una serie de pasos que los datos atraviesan desde su origen hasta su destino final, pasando por procesos de extracción, transformación y carga (ETL). 
 
 El pipeline de Distribuidora Oasis automatiza los datos asegurando que los datos de inventario y ventas sean recopilados, procesados y cargados en el sistema de gestión de datos de manera eficiente y confiable cada 24 horas. Esto incluye:
 
-## 🛢️ EXTRACCIÓN: 
+### 🛢️ EXTRACCIÓN: 
 
 Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de datos por el Área de Ánálisis de Datos(link), se importaron a [Google Cloud Platform](https://cloud.google.com/?_gl=1*6gcnrv*_up*MQ..&gclid=CjwKCAjw-O6zBhASEiwAOHeGxXc4YZx6SNH1EHwvQgGmacSJnslZSK8XEbOaI-IYDAFV-nnJz4emIxoCwYcQAvD_BwE&gclsrc=aw.ds&hl=es_419), en Datawarehouse BigQuery, utilizando código de Python en [Google Colab](https://colab.research.google.com/drive/1j-HrMwga8oIaSLumfFZ1qPX-bo347MU1) 
 
 ![Pipeline drawio (3) 1](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/139195222/f7592c5f-a369-41fd-afa6-7c8c0f7800c3)
 
-## 🛠️ TRANSFORMACIÓN: 
+### 🛠️ TRANSFORMACIÓN: 
 
 **Realizada en BigQuery.**
 
-### 1️⃣ Crear la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
+#### 1️⃣ Crear la estructura del esquema de 2 tablas nuevas: MOVIMIENTO_DE_INVENTARIO e INVENTARIO_REAL. 
 
-#### Crear Esquema de Tabla de Movimiento de Inventario
+**Crear Esquema de Tabla de Movimiento de Inventario**
 
 ```sql
 -- CREAR ESQUEMA DE TABLA DE MOVIMIENTO DE INVENTARIO
@@ -87,9 +89,9 @@ Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de dat
 7  );
 ```
 
-### 2️⃣ Ingresar datos a las tablas previamente creadas. 
+#### 2️⃣ Ingresar datos a las tablas previamente creadas. 
 
-#### Insertar datos en Tabla de Inventario Real
+**Insertar datos en Tabla de Inventario Real**
 
 ```sql
 -- Calcular el inventario real sumando compras y restando ventas
@@ -110,7 +112,7 @@ Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de dat
 15     mi.ProductoID, mi.TiendaID, t.Ciudad;
 ```
 
-### Insertar datos en Tabla Movimiento de Inventario
+**Insertar datos en Tabla Movimiento de Inventario**
 
 ```sql
 1  INSERT INTO `neural-ripple-426817-v0.BD_OASIS.MOVIMIENTO_DE_INVENTARIO` (InventarioID, Detalle_compraID, VentaID, TiendaID, ProductoID, Cantidad)
@@ -149,12 +151,13 @@ Los archivos CSV almacenados en Google Drive, que salieron de la limpieza de dat
 
 ### 🔂 AUTOMATIZACIÓN: 
 
-## Automatización de carga de entradas nuevas a la tabla COMPRA
+Para iniciar con el proceso de automatización se realizaron pasos previos: 
+1. Se importo cada archivo CSV a formato Google Sheets, guardados dentro de Google Drive. Donde la empresa ingresa registros nuevos todos los dias. 
+2. Asegurarse que el archivo `.json` con las credenciales del proyecto: `neural-ripple-426817-v0-65c1b31ad608.json`, esten guardadas dentro del Bucket en Cloud Storage.
 
+#### Pasos para realizar la **automatización de ingreso de datos nuevos en la tabla COMPRA**: 
 
-Antes de iniciar cualquier proceso de automatización se deberá contar con el archivo .json con las credenciales del proyecto  `neural-ripple-426817-v0-65c1b31ad608.json`.
-
-**Google Cloud Pub/Sub** (Publish/Subscribe) es un servicio de mensajería en tiempo real y escalable que facilita la comunicación entre diferentes componentes de aplicaciones distribuidas en Google Cloud Platform (GCP).
+1. 👉 **Google Cloud Pub/Sub** (Publish/Subscribe) es un servicio de mensajería en tiempo real y escalable que facilita la comunicación entre diferentes componentes de aplicaciones distribuidas en Google Cloud Platform (GCP).
 Pub/Sub puede manejar grandes volúmenes de mensajes y escalar automáticamente según la demanda.
 
 Lo primero que haremos dentro de este servicio es `CREAR TEMA`.
@@ -167,7 +170,7 @@ En este caso realizamos un tema llamado `Compras_oasis`.
 
 Luego pasamos a Cloud Functions. 
 
-**Google Cloud Functions** es una plataforma  para ejecutar código en respuesta a eventos, facilitando la creación de aplicaciones y servicios altamente escalables y eficientes, sin necesidad de gestionar ni aprovisionar servidores.
+2. 👉 **Google Cloud Functions** es una plataforma  para ejecutar código en respuesta a eventos, facilitando la creación de aplicaciones y servicios altamente escalables y eficientes, sin necesidad de gestionar ni aprovisionar servidores.
 
 Dentro, iremos a ` CREAR FUNCION`,  en aspectos básicos, pusimos entorno de 2° gen. El nombre de la función que ibamos a realizar, en nuestro caso `Activar_compras`, elegimos la región southamerica-east1 (São Paulo) que es la región la misma zona horaria que Argentina. 
 
@@ -285,15 +288,11 @@ numpy==1.22.3   # Especificar una versión de NumPy compatible
 
 Luego de esto, haremos probar función.
 
-
-
 Una vez que nos avisa que el codigo está correcto, procederemos a irnos pasar a Google Cloud Scheduler.
 
-
-**Google Cloud Scheduler** es un servicio de planificación de tareas basado en la nube que permite ejecutar trabajos cron (jobs) de manera automatizada y programada. Es ideal para tareas recurrentes y programadas que necesitan ejecutarse a intervalos específicos o en momentos determinados.
+3. 👉 **Google Cloud Scheduler** es un servicio de planificación de tareas basado en la nube que permite ejecutar trabajos cron (jobs) de manera automatizada y programada. Es ideal para tareas recurrentes y programadas que necesitan ejecutarse a intervalos específicos o en momentos determinados.
 
 En nuestro caso, publicará el Pub/Sub creado inicial. 
-
 
 Primero, definimos el programa.
 Le pondremos un nombre al programa, en nuestro caso será `Actualizar_compras`, elegimos la misma region que veniamos trabajando, le agregamos una breve descripción de lo que hará el programa, y programaremos la frecuencia.
@@ -312,15 +311,14 @@ La frecuencia se especifica con el formato Cron, que funciona de la siguiente fo
 
 En nuestro caso, para "59 23 * * *" significará que todos los días las 23:59 se ejecutará la acción, donde todos las filas con fecha del dia entrarán a la tabla COMPRA. 
 
-
 Una vez finalizada la programación, se ejecutará la carga automatica de datos.
-
 
 ## 📊 CARGA: 
 
+Los registros nuevos que se ingresen por día serán actualizados en cada tabla correspondiente en el Datawarehouse, el cual es conectado con Power Bi, para visualizar en tiempo real los datos de manera visual, calculando métricas de negocio, para su mejor entendimiento y eficacia. 
 
 
-****Tecnologías y Herramientas Utilizadas
+#### Tecnologías y Herramientas Utilizadas a lo largo del pipeline:
 
-Google Sheets, Google Colab, Google Cloud Platform, BigQuery, 
+Google Drive, Google Spreadsheets, Google Colab, Google Cloud Platform, BigQuery, Cloud Storage, Pub/Sub, Cloud Functions, Cloud Scheduler. Draw.io. 
 
