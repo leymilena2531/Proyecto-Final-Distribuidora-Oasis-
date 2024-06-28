@@ -12,8 +12,6 @@ Se realizó la automatización de los registros nuevos cada 24 horas. Este proce
    
 4. **Escalabilidad:** Facilita la gestión de grandes volúmenes de datos y permite aumentar la capacidad según las necesidades del negocio sin comprometer el rendimiento. Esto asegura que la infraestructura tecnológica pueda crecer al mismo ritmo que la empresa.
 
-5. **Mejora en la precisión de los datos:** La automatización reduce los errores humanos asociados con la entrada manual de datos, garantizando que la información utilizada para la toma de decisiones sea precisa y fiable.
-
 
 ## GOOGLE CLOUD PLATFORM (GCP) 
 
