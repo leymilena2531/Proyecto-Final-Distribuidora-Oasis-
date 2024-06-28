@@ -1,5 +1,5 @@
-EDA y Limpieza de Datos en Python para Análisis de Inventario
-
+## EDA y Limpieza de Datos en Python para Análisis de Inventario
+--
 
 El Análisis Exploratorio de Datos (EDA) es una técnica fundamental que permite obtener una comprensión 
 más profunda de los conjuntos de datos con los que trabajan. A través del EDA, se exploran patrones, 
