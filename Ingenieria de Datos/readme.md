@@ -319,8 +319,3 @@ Los registros nuevos que se ingresen por día serán actualizados en cada tabla 
 #### Tecnologías y Herramientas Utilizadas a lo largo del pipeline:
 
 Google Drive, Google Spreadsheets, Google Colab, Google Cloud Platform, BigQuery, Cloud Storage, Pub/Sub, Cloud Functions, Cloud Scheduler. Draw.io. 
-
-
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
