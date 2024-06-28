@@ -1,5 +1,5 @@
 
-![soluc](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/168442686/76db220e-ca7b-413e-b968-f856d4016ac6)
+![Imagen de WhatsApp 2024-06-21 a las 09 19 47_bd582f6c](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/168442686/c64ed18f-7186-4628-865e-a1a0e57eb0e4)
 
 ---
 
