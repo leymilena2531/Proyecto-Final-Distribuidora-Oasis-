@@ -1,6 +1,4 @@
-# 📊 ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO
-
-Área Ingeniería de Datos. 
+# 📊 ANÁLISIS DE NEGOCIO Y GESTIÓN DE INVENTARIO / Área Ingeniería de Datos. 
 
 ## 🎯 Objetivo Principal: Automatizar la ingesta de datos nuevos. 
 
