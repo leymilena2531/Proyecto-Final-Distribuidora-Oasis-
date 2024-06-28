@@ -10,9 +10,9 @@
 
 ## Integrantes: 
 
-* Vilma Daniela Ferrer -  Ing. de Datos
+* Vilma Daniela Ferrer - Analista de Datos
 * Maria Florencia Lo Cascio - Ing. de Datos
-* Micaela Piergiacomi - Analista de Datos
+* Micaela Piergiacomi - Ing. de Datos
 * Leidy milena Loaiza - Analista de Datos
 * Rosa Graciela Gómez Jiménez - Analista de Datos
 
