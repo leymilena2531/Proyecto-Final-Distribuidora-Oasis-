@@ -32,14 +32,20 @@ Información del proyecto en GCP:
 ### Recursos utilizados dentro de Cloud:
 
 BigQuery: utilizado como Datawarehouse. Crear esquema de tablas, insertar datos y consultas SQL. 
+
 Cloud Storage: almacenar las credenciales en un Bucket.
+
 Pub/sub:
+
 Cloud Functions: 
+
 Cloud Scheduler: 
 
 # PIPELINE:
 
-Ees una serie de pasos que los datos atraviesan desde su origen hasta su destino final, pasando por procesos de extracción, transformación y carga (ETL). En el contexto de Distribuidora Oasis, el pipeline de datos automatizado asegura que los datos de inventario y ventas sean recopilados, procesados y cargados en el sistema de gestión de datos de manera eficiente y confiable cada 24 horas. Esto incluye:
+Es una serie de pasos que los datos atraviesan desde su origen hasta su destino final, pasando por procesos de extracción, transformación y carga (ETL). 
+
+El pipeline de Distribuidora Oasis automatiza los datos asegurando que los datos de inventario y ventas sean recopilados, procesados y cargados en el sistema de gestión de datos de manera eficiente y confiable cada 24 horas. Esto incluye:
 
 ### EXTRACCIÓN: 
 
