@@ -316,6 +316,6 @@ Una vez finalizada la programación, se ejecutará la carga automatica de datos.
 Los registros nuevos que se ingresen por día serán actualizados en cada tabla correspondiente en el Datawarehouse, el cual es conectado con Power Bi, para visualizar en tiempo real los datos de manera visual, calculando métricas de negocio, para su mejor entendimiento y eficacia. 
 
 
-### Tecnologías y Herramientas Utilizadas a lo largo del pipeline:
+## Tecnologías y Herramientas Utilizadas a lo largo del pipeline:
 
 Google Drive, Google Spreadsheets, Google Colab, Google Cloud Platform, BigQuery, Cloud Storage, Pub/Sub, Cloud Functions, Cloud Scheduler. Draw.io. 
