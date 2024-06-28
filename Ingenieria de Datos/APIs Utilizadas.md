@@ -1,8 +1,8 @@
 # API: Interfaz de Programación de Aplicaciones
 
-### Consume información de otras plataformas.
-### Permite utilizar capacidades mandando un input, recibiendo un output.
-### Pueden ser creadas por uno, externas y de pago.
+- Consume información de otras plataformas.
+- Permite utilizar capacidades mandando un input, recibiendo un output.
+- Pueden ser creadas por uno, externas y de pago.
 
 |**APIS EXTERNAS UTILIZADAS** |
 | --------------------------- | 
