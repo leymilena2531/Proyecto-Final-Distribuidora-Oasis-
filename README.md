@@ -5,7 +5,9 @@
 
 
 # 📊 Optimización de Inventario para Minimizar Costos y Maximizar Rentabilidad
-Consultoría: Soluciones Analíticas
+
+## Consultoría: Soluciones Analíticas
+
 ## Integrantes: 
 
 Vilma Daniela Ferrer -  Ing. de Datos
