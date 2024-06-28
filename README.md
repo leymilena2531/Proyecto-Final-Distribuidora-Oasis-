@@ -1,9 +1,10 @@
-![Web-developer](https://raw.githubusercontent.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/011de6f133bfc12777fd15fa8ac113201467ace8/banner.png)
+![soluc](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/114260905/0784f3d0-4946-4203-97ef-ef0fc0f5d397)
+
+
 ---
 
 
 # 📊 Optimización de Inventario para Minimizar Costos y Maximizar Rentabilidad
-
 <h2>La empresa 🍻🍾🍺</h2>  
 La Distribuidora Oasis  es una empresa manufacturera dedicada a la distribución de bebidas. La empresa ha estado experimentando problemas con la gestión de inventario, incluidos desabastecimientos, exceso de inventario y mayores costos de mantenimiento. El equipo directivo quiere realizar un análisis de inventario para identificar áreas de mejora y optimizar sus prácticas de gestión de inventario.
 
