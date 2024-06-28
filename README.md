@@ -5,15 +5,35 @@
 
 
 # 📊 Optimización de Inventario para Minimizar Costos y Maximizar Rentabilidad
-<h2>La empresa 🍻🍾🍺</h2>  
-La Distribuidora Oasis  es una empresa manufacturera dedicada a la distribución de bebidas. La empresa ha estado experimentando problemas con la gestión de inventario, incluidos desabastecimientos, exceso de inventario y mayores costos de mantenimiento. El equipo directivo quiere realizar un análisis de inventario para identificar áreas de mejora y optimizar sus prácticas de gestión de inventario.
+Consultoría: Soluciones Analíticas
+## Integrantes: 
 
-<h2>El Desafio 🚀</h2>   
+Vilma Daniela Ferrer -  Ing. de Datos
+Maria Florencia Lo Cascio - Ing. de Datos
+Micaela Piergiacomi - Analista de Datos
+Leidy milena Loaiza - Analista de Datos
+Rosa Graciela Gómez Jiménez - Analista de Datos
 
-El desafío principal de la empresa es implementar un sistema de gestión de inventario eficiente. La falta de conocimiento sobre la gestión de inventarios representa un obstáculo significativo, este desconocimiento radica en que la información se encuentra almacenada en diferentes archivos de Excel y no hay una unanimidad de los datos. Sin una comprensión detallada de sus existencias y de cómo gestionarlas eficientemente, la empresa podría experimentar problemas de logística, exceso o escasez de productos y, finalmente, perdida de ventas.
+
+
+<h2>La empresa 🍻🍾🍺</h2> 
+
+![distribuidora oasis](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/114260905/9df80b0b-f31c-44a7-ba71-d06d8825a5a6)
+ 
+Este proyecto aborda los desafíos de inventario que enfrenta Distribuidora Oasis, una empresa de licores. Mediante el análisis de datos y la implementación de modelos de optimización, buscamos reducir costos, minimizar pérdidas de ventas y mejorar la experiencia del cliente.
 
 ## Descripción del Proyecto
 Somos la consultora <b>"Soluciones Analíticas"</b> y la Distribuidora Oasis nos indica que quiere analizar datos de inventario para optimizar la gestión de una empresa y maximizar su rentabilidad. El análisis permitirá identificar patrones de demanda y tomar decisiones informadas sobre políticas de reposición y coordinación de la cadena de suministro. 
+
+<h2>El Desafio 🚀</h2>   
+El principal desafío al que nos enfrentamos es implementar un sistema de gestión de inventario eficiente. Sin embargo, existen obstáculos significativos que debemos superar. Uno de ellos es la falta de conocimiento profundo sobre la gestión de inventarios. La información relevante se encuentra dispersa en diferentes archivos de Excel, y no existe una uniformidad en los datos.
+
+Esta falta de claridad puede tener consecuencias negativas para la empresa. Sin una comprensión detallada de las existencias y cómo gestionarlas de manera eficiente, podríamos enfrentarnos a problemas logísticos, exceso o escasez de productos y, en última instancia, pérdida de ventas.
+
+Nuestro objetivo es abordar estos desafíos y desarrollar estrategias efectivas para optimizar la gestión de inventario en beneficio de la empresa.
+
+
+
 
 <h2>Objetivos 🎯</h2> 
 
@@ -43,6 +63,32 @@ Somos la consultora <b>"Soluciones Analíticas"</b> y la Distribuidora Oasis nos
 * Calidad variable
 * Formatos de los Data Set CSV
 * Datos de los años 2016 y 2017
+
+## Metodología
+
+1.	Recolección y Preparación de Datos:
+o	Extracción de datos de ventas, inventario, proveedores y demanda.
+o	Limpieza y preprocesamiento de datos.
+o	Integración de datos en un almacén centralizado.
+
+2.	Análisis y Modelado:
+o	Análisis descriptivo de los datos.
+o	Desarrollo de modelos predictivos de demanda.
+o	Implementación de algoritmos de optimización de inventario.
+
+3.	Visualización y Comunicación:
+o	Creación de visualizaciones claras e informativas.
+o	Desarrollo de un dashboard interactivo en Power BI.
+o	Presentación de resultados a stakeholders.
+
+
+## Estructura del Repositorio
+•	/datos/: Datos crudos y procesados.
+•	/EDA/: Notebooks de Jupyter con el análisis y modelado.
+•	/Ingenieria De Datos/: Automatizacion De Datos .
+•	/Machine Learning/: Informes y presentaciones de resultados.
+•	README.md: Este archivo.
+
 
 ## Herramientas y Tecnologías
 
