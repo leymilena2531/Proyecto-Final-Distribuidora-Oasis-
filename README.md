@@ -1,4 +1,5 @@
-![soluc](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/114260905/0784f3d0-4946-4203-97ef-ef0fc0f5d397)
+
+![BannerSoluciones](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/114260905/93cae183-871c-4a49-9f3b-6ce44d89285c)
 
 
 ---
