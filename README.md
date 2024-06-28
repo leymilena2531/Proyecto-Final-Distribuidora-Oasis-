@@ -10,11 +10,11 @@
 
 ## Integrantes: 
 
-Vilma Daniela Ferrer -  Ing. de Datos
-Maria Florencia Lo Cascio - Ing. de Datos
-Micaela Piergiacomi - Analista de Datos
-Leidy milena Loaiza - Analista de Datos
-Rosa Graciela Gómez Jiménez - Analista de Datos
+* Vilma Daniela Ferrer -  Ing. de Datos
+* Maria Florencia Lo Cascio - Ing. de Datos
+* Micaela Piergiacomi - Analista de Datos
+* Leidy milena Loaiza - Analista de Datos
+* Rosa Graciela Gómez Jiménez - Analista de Datos
 
 
 
@@ -85,11 +85,16 @@ o	Presentación de resultados a stakeholders.
 
 
 ## Estructura del Repositorio
-•	/datos/: Datos crudos y procesados.
-•	/EDA/: Notebooks de Jupyter con el análisis y modelado.
-•	/Ingenieria De Datos/: Automatizacion De Datos .
-•	/Machine Learning/: Informes y presentaciones de resultados.
+•	datos: Datos crudos y procesados.
+
+•	EDA: Notebooks de Jupyter con el análisis y modelado.
+
+•	Ingenieria De Datos: Automatizacion De Datos .
+
+•	Machine Learning: Informes y presentaciones de resultados.
+
 •	README.md: Este archivo.
+
 
 
 ## Herramientas y Tecnologías
