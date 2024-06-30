@@ -1,7 +1,0 @@
-echo "# Proyecto-Final-Distribuidora-Oasis-" >> README.md 
-git init 
-git add README.md 
-git commit -m "first commit" 
-git rama -M master 
-git remoto agregar origen https://github.com/leymilena2531 /Proyecto-Final-Distribuidora-Oasis-.git
- git push -u origin master
