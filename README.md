@@ -1,8 +1,9 @@
+![Logo Soluciones Analiticas](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/114260905/0b46f35f-251e-4e8f-ad36-9fb5f6bd6894)
 
-![Imagen de WhatsApp 2024-06-21 a las 09 19 47_bd582f6c](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/168442686/c64ed18f-7186-4628-865e-a1a0e57eb0e4)
+
+
 
 ---
-
 
 # 📊 Optimización de Inventario para Minimizar Costos y Maximizar Rentabilidad
 
@@ -20,7 +21,8 @@
 
 <h2>La empresa 🍻🍾🍺</h2> 
 
-![distribuidora oasis](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/114260905/9df80b0b-f31c-44a7-ba71-d06d8825a5a6)
+![Distribuidora oasis](https://github.com/leymilena2531/Proyecto-Final-Distribuidora-Oasis-/assets/114260905/4252a3c5-30e7-4d0f-92ac-a41a109992b9)
+
  
 Este proyecto aborda los desafíos de inventario que enfrenta Distribuidora Oasis, una empresa de licores. Mediante el análisis de datos y la implementación de modelos de optimización, buscamos reducir costos, minimizar pérdidas de ventas y mejorar la experiencia del cliente.
 
