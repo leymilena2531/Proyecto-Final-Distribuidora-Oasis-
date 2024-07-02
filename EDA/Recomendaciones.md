@@ -1,4 +1,4 @@
-Recomendaciones para la Distribuidora Oasis con base en nuestros hallazgos:
+**Recomendaciones para la Distribuidora Oasis con base en nuestros hallazgos**:
 
 **Normalización del InventarioID**:
    - En lugar de concatenar las columnas TiendaID, Ciudad y ProductoID para formar el InventarioID, considerar asignar un identificador único más limpio y estructurado. Esto facilitará la gestión y búsqueda de registros.
